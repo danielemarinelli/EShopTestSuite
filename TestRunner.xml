@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite1" verbose="1" parallel="tests" thread-count="2">
+  <parameter name="browser" value="${browser}"/>
+  <parameter name="env" value="${env}"/>
+  <parameter name="dataSource" value="${dataSource}"/>
+  <test name="TestNGPractice-Chrome">
+    <classes>
+      <class name="tests.MyntraTest"/>
+    </classes>
+  </test>
+</suite>
